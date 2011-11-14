@@ -7,19 +7,29 @@
   <%= stylesheet_link_tag 'custom',  :media => 'screen' %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+  
+  <!-- ShareThis -->
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher:'d0de0a9c-1258-4636-ac3b-bed9387c3e41'});</script>
+  
 </head>
 <body>
   <div id="general">
-  <!-- Header -->
-		<%= render 'layouts/header' %>
+    <!-- Header -->
+    <%= render 'layouts/header' %>
+    <article>
+    <!-- Inhalt -->
+    <%= yield %>
 
-<%= yield %>
+    </article>
+    <!-- Social -->
+    <p>
+    <span  class='st_google_hcount' displayText='Google'></span>
+    <span  class='st_twitter_hcount' displayText='Tweet'></span>
+    <span  class='st_facebook_hcount' displayText='Facebook'></span>
 
-<div class="social">
-	<%= image_tag("facebook.jpg", :height => '20px', :alt => "Facebook") %>
-        <%= image_tag("googleplus.jpg", :height => '20px', :alt => "Google+") %>
-        <%= image_tag("twitter.jpg", :height => '20px', :alt => "Twitter") %>
-</div>
+  </div>
   </div>
 
 <!-- Footer -->
