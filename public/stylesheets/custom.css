@@ -23,6 +23,8 @@ footer > * {
 	color: #8E8E8E;
 	font-size:0.8em;
 	font: normal 12px "Helvetica Neue", Helvetica, sans-serif;
+	
+	
 }
 
 #general {
@@ -37,17 +39,32 @@ footer > * {
 	color: white;
 }
 
-a:link{
-	color:#8E8E8E;
-	text-decoration: none
-}
-a:visited{
-	color:#8E8E8E;
-	text-decoration: none
-}
-a:hover{color:black;
+.general a:link{
+	color:#fff;
 	text-decoration: underline
 }
-a:active{color:black;
+.general a:visited{
+	color:#fff;
+	text-decoration: underline
+}
+.general a:hover{color:black;
+	text-decoration: underline
+}
+.general a:active{color:black;
+	text-decoration: underline
+}
+
+.footer a:link{
+	color:#8E8E8E;
+	text-decoration: none
+}
+.footer a:visited{
+	color:#8E8E8E;
+	text-decoration: none
+}
+.footer a:hover{color:black;
+	text-decoration: underline
+}
+.footer a:active{color:black;
 	text-decoration: underline
 }
